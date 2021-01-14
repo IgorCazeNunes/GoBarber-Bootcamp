@@ -10,7 +10,7 @@ import Input from '../../components/Input';
 import Button from '../../components/Button';
 
 import { Container, Content, Background } from './styles';
-import getValidationErrors from '../../utils/getValidationErros';
+import getValidationErrors from '../../utils/getValidationErrors';
 
 interface FormData {
   name: string;
