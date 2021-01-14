@@ -10,9 +10,14 @@ import Button from '../../components/Button';
 
 import { Container, Content, Background } from './styles';
 
+interface FormData {
+  name: string;
+  email: string;
+  password: string;
+}
+
 const SignUp: React.FC = () => {
-  // eslint-disable-next-line @typescript-eslint/ban-types
-  const handleSubmit = useCallback(async (data: object) => {
+  const handleSubmit = useCallback(async (data: FormData) => {
     try {
       const schema = Yup.object().shape({
         name: Yup.string().required('Nome obrigatório'),
