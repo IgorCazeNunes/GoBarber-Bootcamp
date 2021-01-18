@@ -30,7 +30,7 @@ usersRouter.post('/', async (request, response) => {
         updated_at: user.updated_at,
     };
 
-    return response.json({ userWithoutPassword });
+    return response.json({ user: userWithoutPassword });
 
 });
 
@@ -52,7 +52,7 @@ usersRouter.patch('/avatar', ensureAuthenticated, upload.single('avatar'), async
         updated_at: user.updated_at,
     };
 
-    return response.json({ userWithoutPassword });
+    return response.json({ user: userWithoutPassword });
 
 });
 
