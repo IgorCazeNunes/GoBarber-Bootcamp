@@ -28,8 +28,6 @@ const SignIn: React.FC = () => {
   const { user, signIn } = useAuth();
   const { addToast } = useToast();
 
-  console.log(user);
-
   const handleSubmit = useCallback(
     async (data: SignInFormData) => {
       try {
