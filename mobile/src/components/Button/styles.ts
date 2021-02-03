@@ -8,6 +8,8 @@ export const Container = styled(RectButton)`
   width: 100%;
   height: 60px;
 
+  margin: 8px 0;
+
   background: #ff9000;
   border-radius: 10px;
 `;
