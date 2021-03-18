@@ -82,7 +82,7 @@ export const AvatarInput = styled.div`
     border-radius: 50%;
   }
 
-  button {
+  label {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -95,19 +95,25 @@ export const AvatarInput = styled.div`
     width: 48px;
     height: 48px;
 
-    color: #ff9000;
+    background: #ff9000;
     border-radius: 50%;
 
+    cursor: pointer;
+
     transition: background-color 0.2s;
+
+    &:hover {
+      background: ${shade(0.2, '#ff9000')};
+    }
+
+    input {
+      display: none;
+    }
 
     svg {
       width: 20px;
       height: 20px;
       color: #312e38;
-    }
-
-    &:hover {
-      background: ${shade(0.2, '#ff9000')};
     }
   }
 `;
